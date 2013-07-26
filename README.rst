@@ -51,4 +51,5 @@ Changelog
 ---
 
 * Initial public release, extracted from my private repository.
+* Switched the implementation to class-based generic views.
 * Added documentation (README file).

@@ -1,6 +1,9 @@
 from django.conf.urls import patterns, url
 
-urlpatterns = patterns('contact.views',
-    url(r'^$', 'contact', name='form'),
-    url(r'^thanks/$', 'thanks', name='thanks'),
+from .views import SubmitView, ThanksView
+
+
+urlpatterns = patterns('',
+    url(r'^$', SubmitView.as_view(), name='form'),
+    url(r'^thanks/$', ThanksView.as_view(), name='thanks'),
 )

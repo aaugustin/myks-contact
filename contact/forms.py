@@ -1,3 +1,7 @@
+import random
+
+from django.conf import settings
+from django.core.mail import EmailMessage
 from django import forms
 from django.utils.translation import ugettext_lazy as _
 
@@ -9,8 +13,21 @@ class ContactForm(forms.Form):
     subject = forms.CharField(label=_("Subject"))
     message = forms.CharField(label=_("Message"), widget=forms.Textarea)
 
+    def __init__(self, *args, **kwargs):
+        super(ContactForm, self).__init__(*args, **kwargs)
+        if not self.is_bound:
+            self.initial['captcha_ref'] = random.randint(1000, 9999)
+
     def clean_captcha(self):
         value = self.cleaned_data['captcha']
         if value != self.cleaned_data.get('captcha_ref'):
             raise forms.ValidationError(_("This code isn't valid."))
         return value
+
+    def send_email(self, headers):
+        EmailMessage(
+            settings.EMAIL_SUBJECT_PREFIX + self.cleaned_data['subject'],
+            self.cleaned_data['message'],
+            self.cleaned_data['sender'],
+            settings.CONTACT_EMAILS,
+            headers=headers).send()
