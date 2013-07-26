@@ -31,7 +31,7 @@ msgstr "Votre e-mail"
 #: forms.py:8
 msgid "Give me a valid e-mail address, otherwise I won't be able to answer."
 msgstr ""
-"Indiquez moi une adresse e-mail valide, sinon je ne pourrai pas vous "
+"Indiquez-moi une adresse e-mail valide, sinon je ne pourrai pas vous "
 "répondre."
 
 #: forms.py:9
