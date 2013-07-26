@@ -38,14 +38,21 @@ Django >= 1.5.
         )
 
 To use the built-in templates, your project's ``base.html`` template must
-provide two blocks: ``title`` and ``content``, as shown in this `example`_.
-You may also override the ``contact/form.html`` and ``contact/thanks.html``
-templates.
+provide three blocks: ``title``, ``extrahead`` and ``content``, as shown in
+this `example`_, and you must be using the staticfiles contrib app.
+
+If these conditions are inconvenient, you can override the
+``contact/form.html`` and ``contact/thanks.html`` templates.
 
 .. _example: https://github.com/aaugustin/myks-contact/blob/master/contact/tests/templates/base.html
 
 Changelog
 =========
+
+0.2
+---
+
+* Bundled stylesheet.
 
 0.1
 ---

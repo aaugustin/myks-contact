@@ -25,6 +25,7 @@ distutils.core.setup(
         'contact': [
             'locale/*/LC_MESSAGES/*',
             'templates/contact/*.html',
+            'static/*/*',
         ],
     },
     classifiers=[
