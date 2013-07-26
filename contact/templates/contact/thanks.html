@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Contact" %} - {{ block.super }}{% endblock %}
+
+{% block content %}
+
+<h1>{% trans "Contact my by e-mail" %}</h1>
+
+<p>{% trans "Your e-mail was sent. I will read it as soon as I receive it." %}</p>
+
+{% url 'home' as home_url %}
+<p>{% blocktrans %}You can now <a href="{{ home_url }}">go back to the home page</a>.{% endblocktrans %}</p>
+
+{% endblock %}

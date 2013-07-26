@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Contact" %} - {{ block.super }}{% endblock %}
+
+{% block content %}
+
+<h1>{% trans "Contact my by e-mail" %}</h1>
+
+<p>{% trans "You can send me an e-mail with the following form, except if you are trying to sell SEO services — no thanks." %}</p>
+
+<p>{% blocktrans with form.captcha_ref.value as captcha_value %}Copy this code in the first field: <strong>{{ captcha_value }}</strong>.{% endblocktrans %}</p>
+
+<form action="{% url 'contact:form' %}" method="POST">
+{% csrf_token %}
+<table class="email_form">
+{{ form.as_table }}
+</table>
+<p class="email_submit">
+<input type="submit" value="{% trans "Send e-mail!" %}">
+</p>
+</form>
+
+{% endblock %}

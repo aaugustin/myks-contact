@@ -1,0 +1,84 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-26 13:30+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
+
+#: forms.py:7
+msgid "Code"
+msgstr "Code"
+
+#: forms.py:7
+msgid ""
+"This is a shield against bots, a basic <a href=\"http://en.wikipedia.org/"
+"wiki/Captcha\">CAPTCHA</a>."
+msgstr ""
+"Ceci est un bouclier contre les robots spammeurs, un <a href=\"http://fr."
+"wikipedia.org/wiki/Captcha\">CAPTCHA</a> rudimentaire."
+
+#: forms.py:8
+msgid "Your e-mail"
+msgstr "Votre e-mail"
+
+#: forms.py:8
+msgid "Give me a valid e-mail address, otherwise I won't be able to answer."
+msgstr ""
+"Indiquez moi une adresse e-mail valide, sinon je ne pourrai pas vous "
+"répondre."
+
+#: forms.py:9
+msgid "Subject"
+msgstr "Sujet"
+
+#: forms.py:10
+msgid "Message"
+msgstr "Message"
+
+#: forms.py:15
+msgid "This code isn't valid."
+msgstr "Ce code n'est pas correct."
+
+#: templates/contact/form.html:4 templates/contact/thanks.html:4
+msgid "Contact"
+msgstr "Contact"
+
+#: templates/contact/form.html:8 templates/contact/thanks.html:8
+msgid "Contact my by e-mail"
+msgstr "Me contacter par email"
+
+#: templates/contact/form.html:10
+msgid ""
+"You can send me an e-mail with the following form, except if you are trying "
+"to sell SEO services — no thanks."
+msgstr ""
+"Vous pouvez m'envoyer un email avec le formulaire suivant, sauf si vous "
+"cherchez à me vendre des services de SEO — non merci."
+
+#: templates/contact/form.html:12
+#, python-format
+msgid "Copy this code in the first field: <strong>%(captcha_value)s</strong>."
+msgstr ""
+"Recopiez ce code dans le premier champ: <strong>%(captcha_value)s</strong>."
+
+#: templates/contact/form.html:20
+msgid "Send e-mail!"
+msgstr "Envoyer l'e-mail !"
+
+#: templates/contact/thanks.html:10
+msgid "Your e-mail was sent. I will read it as soon as I receive it."
+msgstr "Votre message a été envoyé. Je le lirai dès que je le recevrai."
+
+#: templates/contact/thanks.html:13
+#, python-format
+msgid "You can now <a href=\"%(home_url)s\">go back to the home page</a>."
+msgstr ""
+"Vous pouvez maintenant <a href=\"%(home_url)s\">revenir à la page d'accueil."
+"</a>."
