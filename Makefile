@@ -1,5 +1,5 @@
 export PYTHONPATH:=.:$(PYTHONPATH)
-export DJANGO_SETTINGS_MODULE:=contact.tests.settings
+export DJANGO_SETTINGS_MODULE:=contact.test_settings
 
 test:
 	django-admin.py test contact
