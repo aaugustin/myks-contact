@@ -49,6 +49,11 @@ If these conditions are inconvenient, you can override the
 Changelog
 =========
 
+0.3
+---
+
+* Refactored tests for Django 1.6.
+
 0.2
 ---
 
