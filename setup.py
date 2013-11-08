@@ -6,7 +6,7 @@ os.putenv('COPYFILE_DISABLE', 'true')
 
 description = 'Simple contact form'
 
-with open(os.path.join(os.path.dirname(__file__), 'README')) as f:
+with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as f:
     long_description = '\n\n'.join(f.read().split('\n\n')[1:])
 
 distutils.core.setup(
