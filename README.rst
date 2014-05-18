@@ -33,9 +33,9 @@ Django >= 1.5.
 4.  Add the application to your URLconf with the ``contact`` application
     namespace::
 
-        urlpatterns += patterns('',
+        urlpatterns += [
             url(r'^contact/', include('contact.urls', namespace='contact', app_name='contact')),
-        )
+        ]
 
 To use the built-in templates, your project's ``base.html`` template must
 provide three blocks: ``title``, ``extrahead`` and ``content``, as shown in
