@@ -1,4 +1,4 @@
-import distutils.core
+import setuptools
 import os
 
 # Avoid polluting the .tar.gz with ._* files under Mac OS X
@@ -14,9 +14,9 @@ description = 'Simple contact form'
 with open(README) as f:
     long_description = '\n\n'.join(f.read().split('\n\n')[1:])
 
-distutils.core.setup(
+setuptools.setup(
     name='myks-contact',
-    version='0.3',
+    version='1.0',
     author='Aymeric Augustin',
     author_email='aymeric.augustin@m4x.org',
     url='https://github.com/aaugustin/myks-contact',
@@ -34,7 +34,7 @@ distutils.core.setup(
         ],
     },
     classifiers=[
-        "Development Status :: 4 - Beta",
+        "Development Status :: 5 - Production/Stable",
         "Environment :: Web Environment",
         "Framework :: Django",
         "Intended Audience :: Developers",
@@ -42,7 +42,6 @@ distutils.core.setup(
         "Operating System :: OS Independent",
         "Programming Language :: Python",
         "Programming Language :: Python :: 2",
-        "Programming Language :: Python :: 2.6",
         "Programming Language :: Python :: 2.7",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.2",
