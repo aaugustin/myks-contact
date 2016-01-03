@@ -66,7 +66,7 @@ msgstr ""
 #, python-format
 msgid "Copy this code in the first field: <strong>%(captcha_value)s</strong>."
 msgstr ""
-"Recopiez ce code dans le premier champ: <strong>%(captcha_value)s</strong>."
+"Recopiez ce code dans le premier champ : <strong>%(captcha_value)s</strong>."
 
 #: templates/contact/form.html:25
 msgid "Send e-mail!"
