@@ -49,6 +49,11 @@ If these conditions are inconvenient, you can override the
 Changelog
 =========
 
+1.0
+---
+
+* Stable release.
+
 0.3
 ---
 
