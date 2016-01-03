@@ -16,7 +16,7 @@ with open(README) as f:
 
 setuptools.setup(
     name='myks-contact',
-    version='1.0',
+    version='1.1',
     author='Aymeric Augustin',
     author_email='aymeric.augustin@m4x.org',
     url='https://github.com/aaugustin/myks-contact',
