@@ -21,7 +21,7 @@ myks-contact is a pluggable Django application. It is tested with Django ≥ 1.8
 
 2.  Add ``contact`` to ``INSTALLED_APPS``::
 
-        INSTALLED_APPS += 'contact',
+        INSTALLED_APPS += ['contact']
 
     This allows Django to discover the built-in templates and translations.
 
