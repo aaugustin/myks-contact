@@ -1,8 +1,7 @@
-*.egg-info
 *.pyc
 .coverage
+*.egg-info
 build
 dist
 htmlcov
 MANIFEST
-README
