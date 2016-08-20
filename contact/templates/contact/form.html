@@ -18,7 +18,7 @@
 {% csrf_token %}
 <p class="captcha-code">{% blocktrans with form.captcha_ref.value as captcha_value %}Copy this code in field below: <strong>{{ captcha_value }}</strong>.{% endblocktrans %}</p>
 {{ form.as_p }}
-<input type="submit" value="{% trans "Send e-mail" %}">
+<p><input type="submit" value="{% trans "Send e-mail" %}"></p>
 </form>
 
 {% endblock %}

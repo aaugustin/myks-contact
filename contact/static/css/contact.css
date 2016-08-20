@@ -1,6 +1,8 @@
 /* Text styles */
 
 .myks-contact-form label {
+    /* Match border of inputs to align the text baseline. */
+    border: 1px solid transparent;
     color: #333;
     font-size: 1em;
     font-weight: bold;
@@ -9,6 +11,7 @@
 }
 .myks-contact-form input,
 .myks-contact-form textarea {
+    border: 1px solid #ccc;
     font-family: inherit;
     font-size: 1em;
     line-height: 1.5em;
@@ -20,9 +23,6 @@
     font-style: italic;
     line-height: 1.5em;
     padding: 0.25em 0;
-}
-.myks-contact-form input[type="submit"] {
-    font-weight: bold;
 }
 .myks-contact-form .errorlist {
     color: #c00;
