@@ -1,31 +1,83 @@
-.errorlist {
+/* Text styles */
+
+.myks-contact-form label {
+    color: #333;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding: 0.25em 0;
+}
+.myks-contact-form input,
+.myks-contact-form textarea {
+    font-family: inherit;
+    font-size: 1em;
+    line-height: 1.5em;
+    padding: 0.25em 0.5em;
+}
+.myks-contact-form .helptext {
+    color: #999;
+    font-size: 0.75em;
+    font-style: italic;
+    line-height: 1.5em;
+    padding: 0.25em 0;
+}
+.myks-contact-form input[type="submit"] {
+    font-weight: bold;
+}
+.myks-contact-form .errorlist {
     color: #c00;
-    font-size: 12px;
+    font-size: 0.875em;
     font-style: italic;
     padding: 0;
     margin: 0;
     list-style-type: none;
 }
-.email_form th {
-    padding-right: 1em;
-    text-align: right;
-    vertical-align: top;
-}
-.email_form .helptext {
-    color: #999;
-    font-size: 12px;
-    font-style: italic;
+.myks-contact-form .errorlist li {
+    padding: 0;
     margin: 0;
 }
-.email_form #id_captcha {
-    width: 4em;
+
+/* Layout */
+
+.myks-contact-form * {
+    box-sizing: border-box;
 }
-.email_form #id_sender,
-.email_form #id_subject,
-.email_form #id_message {
+.myks-contact-form {
+    margin: 0 auto;
+    position: relative;
+    max-width: 60em;
+}
+.myks-contact-form label,
+.myks-contact-form input,
+.myks-contact-form textarea,
+.myks-contact-form .helptext {
+    display: block
+}
+.myks-contact-form #id_captcha {
+    width: 6em;
+}
+.myks-contact-form #id_sender,
+.myks-contact-form #id_subject,
+.myks-contact-form #id_message {
     width: 100%;
 }
-.email_submit {
-    text-align: center;
-}
 
+@media (min-width: 45em) {
+    .myks-contact-form label {
+        position: absolute;
+        text-align: right;
+        padding-right: 0.5em;
+        width: 20%;
+    }
+    .myks-contact-form .captcha-code,
+    .myks-contact-form input,
+    .myks-contact-form textarea,
+    .myks-contact-form .helptext {
+        margin-left: 20%;
+    }
+    .myks-contact-form #id_sender,
+    .myks-contact-form #id_subject,
+    .myks-contact-form #id_message {
+        width: 80%;
+    }
+}

@@ -48,6 +48,11 @@ If these conditions are inconvenient, you can override the
 Changelog
 =========
 
+1.2
+---
+
+* Responsive CSS layout.
+
 1.1
 ---
 
