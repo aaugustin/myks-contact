@@ -1,8 +1,8 @@
 mYk's contact form
-##################
+==================
 
 Goals
-=====
+-----
 
 `myks-contact`_ is a simple contact form. It's adequate for a personal home
 page. It features a basic CAPTCHA_.
@@ -11,7 +11,7 @@ page. It features a basic CAPTCHA_.
 .. _CAPTCHA: http://en.wikipedia.org/wiki/Captcha
 
 Setup
-=====
+-----
 
 myks-contact is a pluggable Django application. It is tested with Django ≥ 1.8.
 
@@ -46,35 +46,35 @@ If these conditions are inconvenient, you can override the
 .. _example: https://github.com/aaugustin/myks-contact/blob/master/contact/tests/templates/base.html
 
 Changelog
-=========
+---------
 
 1.2
----
+...
 
 * Responsive CSS layout.
 
 1.1
----
+...
 
 * Update for Django 1.8 and later.
 
 1.0
----
+...
 
 * Stable release.
 
 0.3
----
+...
 
 * Refactored tests for Django 1.6.
 
 0.2
----
+...
 
 * Bundled stylesheet.
 
 0.1
----
+...
 
 * Initial public release, extracted from my private repository.
 * Switched the implementation to class-based generic views.

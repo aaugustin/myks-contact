@@ -1,11 +1,16 @@
+from __future__ import unicode_literals
+
+import codecs
 import os.path
 
 import setuptools
 
+root_dir = os.path.abspath(os.path.dirname(__file__))
+
 description = "Simple contact form"
 
-with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
-    long_description = '\n\n'.join(readme.read().split('\n\n')[1:])
+with codecs.open(os.path.join(root_dir, 'README.rst'), encoding='utf-8') as f:
+    long_description = f.read()
 
 setuptools.setup(
     name='myks-contact',
