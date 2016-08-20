@@ -9,7 +9,7 @@ with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
 
 setuptools.setup(
     name='myks-contact',
-    version='1.1',
+    version='1.2',
     description=description,
     long_description=long_description,
     url='https://github.com/aaugustin/myks-contact',
