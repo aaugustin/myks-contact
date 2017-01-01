@@ -51,7 +51,7 @@ msgid "Contact"
 msgstr "Contact"
 
 #: templates/contact/form.html:13 templates/contact/thanks.html:8
-msgid "Contact my by e-mail"
+msgid "Contact me by e-mail"
 msgstr "Me contacter par email"
 
 #: templates/contact/form.html:15
