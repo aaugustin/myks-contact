@@ -19,8 +19,8 @@ class ContactTests(TestCase):
         })
         self.assertRedirects(response, reverse('contact:thanks'))
         self.assertEqual(len(mail.outbox), 1)
-        self.assertIn("charlie@example.com", mail.outbox[0].to)
-        self.assertIn("seo@hacker.com", mail.outbox[0].from_email)
+        self.assertEqual(["charlie@example.com"], mail.outbox[0].to)
+        self.assertEqual(["seo@hacker.com"], mail.outbox[0].reply_to)
         self.assertIn("I can't read!", mail.outbox[0].subject)
         self.assertIn("And I like spamming.", mail.outbox[0].body)
 

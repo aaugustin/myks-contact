@@ -26,8 +26,9 @@ class ContactForm(forms.Form):
 
     def send_email(self, headers):
         EmailMessage(
-            settings.EMAIL_SUBJECT_PREFIX + self.cleaned_data['subject'],
-            self.cleaned_data['message'],
-            self.cleaned_data['sender'],
-            settings.CONTACT_EMAILS,
-            headers=headers).send()
+            subject=settings.EMAIL_SUBJECT_PREFIX + self.cleaned_data['subject'],
+            body=self.cleaned_data['message'],
+            to=settings.CONTACT_EMAILS,
+            reply_to=[self.cleaned_data['sender']],
+            headers=headers,
+        ).send()
