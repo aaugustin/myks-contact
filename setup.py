@@ -14,7 +14,7 @@ with codecs.open(os.path.join(root_dir, 'README.rst'), encoding='utf-8') as f:
 
 setuptools.setup(
     name='myks-contact',
-    version='1.3',
+    version='1.3.1',
     description=description,
     long_description=long_description,
     url='https://github.com/aaugustin/myks-contact',
