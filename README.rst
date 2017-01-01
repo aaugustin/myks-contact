@@ -48,6 +48,11 @@ If these conditions are inconvenient, you can override the
 Changelog
 ---------
 
+1.3
+...
+
+* Put sender email in Reply-To instead of From.
+
 1.2
 ...
 
