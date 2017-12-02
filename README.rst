@@ -13,7 +13,7 @@ page. It features a basic CAPTCHA_.
 Setup
 -----
 
-myks-contact is a pluggable Django application. It is tested with Django ≥ 1.8.
+myks-contact is a pluggable Django application. It is tested with Django ≥ 1.11.
 
 1.  Download and install the package from PyPI::
 
@@ -33,7 +33,7 @@ myks-contact is a pluggable Django application. It is tested with Django ≥ 1.8
     namespace::
 
         urlpatterns += [
-            url(r'^contact/', include('contact.urls', namespace='contact', app_name='contact')),
+            path('contact/', include('contact.urls', namespace='contact')),
         ]
 
 To use the built-in templates, your project's ``base.html`` template must
@@ -47,6 +47,11 @@ If these conditions are inconvenient, you can override the
 
 Changelog
 ---------
+
+1.4
+...
+
+* Update for Django 2.0.
 
 1.3
 ...

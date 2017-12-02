@@ -1,6 +1,6 @@
 from django.core import mail
-from django.core.urlresolvers import reverse
 from django.test import TestCase
+from django.urls import reverse
 
 
 class ContactTests(TestCase):
@@ -32,5 +32,5 @@ class ContactTests(TestCase):
             'subject': "I can't read!",
             'message': "And I like spamming.",
         })
-        self.assertFormError(response, 'form', 'captcha',
-            "This code isn't valid.")
+        self.assertFormError(
+            response, 'form', 'captcha', "This code isn't valid.")
