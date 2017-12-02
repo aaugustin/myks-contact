@@ -1,17 +1,32 @@
 import random
 
+from django import forms
 from django.conf import settings
 from django.core.mail import EmailMessage
-from django import forms
 from django.utils.translation import ugettext_lazy as _
 
 
 class ContactForm(forms.Form):
-    captcha_ref = forms.IntegerField(widget=forms.HiddenInput)
-    captcha = forms.IntegerField(label=_("Code"), help_text=_("This is a shield against bots, a basic <a href=\"http://en.wikipedia.org/wiki/Captcha\">CAPTCHA</a>."))
-    sender = forms.EmailField(label=_("Your e-mail"), help_text=_("Give me a valid e-mail address, otherwise I won't be able to answer."))
-    subject = forms.CharField(label=_("Subject"))
-    message = forms.CharField(label=_("Message"), widget=forms.Textarea)
+    captcha_ref = forms.IntegerField(
+        widget=forms.HiddenInput,
+    )
+    captcha = forms.IntegerField(
+        label=_("Code"),
+        help_text=_("This is a shield against bots, a basic "
+                    "<a href=\"http://en.wikipedia.org/wiki/Captcha\">CAPTCHA</a>."),
+    )
+    sender = forms.EmailField(
+        label=_("Your e-mail"),
+        help_text=_("Give me a valid e-mail address, "
+                    "otherwise I won't be able to answer."),
+    )
+    subject = forms.CharField(
+        label=_("Subject"),
+    )
+    message = forms.CharField(
+        label=_("Message"),
+        widget=forms.Textarea,
+    )
 
     def __init__(self, *args, **kwargs):
         super(ContactForm, self).__init__(*args, **kwargs)
