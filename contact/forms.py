@@ -3,7 +3,7 @@ import random
 from django import forms
 from django.conf import settings
 from django.core.mail import EmailMessage
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 
 class ContactForm(forms.Form):
@@ -29,7 +29,7 @@ class ContactForm(forms.Form):
     )
 
     def __init__(self, *args, **kwargs):
-        super(ContactForm, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
         if not self.is_bound:
             self.initial['captcha_ref'] = random.randint(1000, 9999)
 

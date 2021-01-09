@@ -13,7 +13,7 @@ page. It features a basic CAPTCHA_.
 Setup
 -----
 
-myks-contact is a pluggable Django application. It is tested with Django ≥ 1.11.
+myks-contact is a pluggable Django application. It is tested with Django ≥ 2.2.
 
 1.  Download and install the package from PyPI::
 
@@ -47,6 +47,12 @@ If these conditions are inconvenient, you can override the
 
 Changelog
 ---------
+
+1.5
+...
+
+* Update for Django 3.0.
+
 
 1.4
 ...

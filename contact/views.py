@@ -12,7 +12,7 @@ class SubmitView(FormView):
     def form_valid(self, form):
         headers = {'X-Source-IP': self.request.META['REMOTE_ADDR']}
         form.send_email(headers)
-        return super(SubmitView, self).form_valid(form)
+        return super().form_valid(form)
 
 
 class ThanksView(TemplateView):

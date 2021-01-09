@@ -1,7 +1,5 @@
-*.egg-info
 *.pyc
 .coverage
-build
 dist
 htmlcov
-MANIFEST
+poetry.lock

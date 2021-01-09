@@ -1,0 +1,35 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.run]
+branch = true
+source = ["contact"]
+
+[tool.poetry]
+name = "myks-contact"
+version = "1.5"
+description = "Simple contact form"
+authors = ["Aymeric Augustin <aymeric.augustin@m4x.org>"]
+license = "BSD-3-Clause"
+readme = "README.rst"
+repository = "https://github.com/aaugustin/myks-contact"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Framework :: Django :: 2.2",
+    "Framework :: Django :: 3.0",
+    "Framework :: Django :: 3.1",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+]
+packages = [{ include = "contact"}]
+
+[tool.poetry.dependencies]
+django = ">=2.2"
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+coverage = {extras = ["toml"], version = "*"}
+flake8 = "*"
